@@ -1,13 +1,29 @@
 {
-  "author": "Dustin Morgan <morgan@aspendenver.org>",
-  "dependencies": [],
-  "license": "apache 2.0",
-  "name": "swizzley88-tower",
-  "operatingsystem_support": [],
-  "project_page": "",
-  "requirements": [],
-  "source": "",
-  "summary": "Ansible Tower",
-  "tags": ["ansible", "tower"],
-  "version": "0.1.0"
+	"author": "Dustin Morgan <morgan@aspendenver.org>",
+	"dependencies": [],
+	"license": "apache 2.0",
+	"name": "swizzley88-tower",
+	"operatingsystem_support": [{
+			"operatingsystem": "RedHat",
+			"operatingsystemrelease": [ "6",
+				"7"
+			]
+		}
+	],
+	"project_page": "https://github.com/swizzley/puppet-tower",
+	"requirements": [{
+			"name": "pe",
+			"version_requirement": "3.x"
+		},{
+			"name": "puppet",
+			"version_requirement": ">=2.7.20 <4.0.0"
+		}
+	],
+	"issues_url": "https://github.com/swizzley/puppet-tower/issues",
+	"source": "https://github.com/swizzley/puppet-tower",
+	"summary": "Ansible Tower with free license",
+	"tags": [ "ansible",
+		"tower"
+	],
+	"version": "0.1.0"
 }
