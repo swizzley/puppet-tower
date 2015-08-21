@@ -1,7 +1,7 @@
 # Class tower::install
 class tower::install ($server = $tower::params::tower_fqdn, $config = $tower::params::tower_opts, $pkg = $tower::params::pkg) 
 inherits tower::params {
-  if ($server = $::fqdn) {
+  if ($server == $::fqdn) {
     package { ['git', "${pkg}"]: ensure => 'installed' } ->
     exec { 'download tower':
       command  => "$(which git) clone git@github.com:swizzley/puppet-ansible_tower.git /root/ansible-tower-setup-2.1.4",
